@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('shoppingJuggernault', ['shoppingJuggernault.greet']);
+angular.module('juggernault', ['jj.modal']);

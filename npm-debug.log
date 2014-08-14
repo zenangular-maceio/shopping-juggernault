@@ -1,0 +1,126 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'generator-angular-next' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose cache add [ 'generator-angular-next', null ]
+5 verbose cache add name=undefined spec="generator-angular-next" args=["generator-angular-next",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'generator-angular-next',
+6 verbose parsed url   path: 'generator-angular-next',
+6 verbose parsed url   href: 'generator-angular-next' }
+7 silly lockFile 38cecfcd-generator-angular-next generator-angular-next
+8 verbose lock generator-angular-next /Users/jotaefe/.npm/38cecfcd-generator-angular-next.lock
+9 silly lockFile 38cecfcd-generator-angular-next generator-angular-next
+10 silly lockFile 38cecfcd-generator-angular-next generator-angular-next
+11 verbose addNamed [ 'generator-angular-next', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile e7094982-generator-angular-next generator-angular-next@
+14 verbose lock generator-angular-next@ /Users/jotaefe/.npm/e7094982-generator-angular-next.lock
+15 silly addNameRange { name: 'generator-angular-next', range: '*', hasData: false }
+16 verbose url raw generator-angular-next
+17 verbose url resolving [ 'https://registry.npmjs.org/', './generator-angular-next' ]
+18 verbose url resolved https://registry.npmjs.org/generator-angular-next
+19 info trying registry request attempt 1 at 21:06:41
+20 verbose etag "BX4MGLJAEWTAV85KZ5FYR8CW9"
+21 http GET https://registry.npmjs.org/generator-angular-next
+22 http 200 https://registry.npmjs.org/generator-angular-next
+23 silly registry.get cb [ 200,
+23 silly registry.get   { date: 'Thu, 14 Aug 2014 00:06:42 GMT',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+23 silly registry.get     etag: '"BY86W3I9IHWYGLEVPVF0GOVVD"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     'cache-control': 'max-age=60',
+23 silly registry.get     'content-length': '5374',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     age: '0',
+23 silly registry.get     'x-served-by': 'cache-jfk1022-JFK',
+23 silly registry.get     'x-cache': 'MISS',
+23 silly registry.get     'x-cache-hits': '0',
+23 silly registry.get     'x-timer': 'S1407974802.546301,VS0,VE91',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 silly addNameRange number 2 { name: 'generator-angular-next', range: '*', hasData: true }
+25 silly addNameRange versions [ 'generator-angular-next', [ '0.1.0', '0.1.0-beta' ] ]
+26 verbose addNamed [ 'generator-angular-next', '0.1.0' ]
+27 verbose addNamed [ '0.1.0', '0.1.0' ]
+28 silly lockFile f7f7ccce-generator-angular-next-0-1-0 generator-angular-next@0.1.0
+29 verbose lock generator-angular-next@0.1.0 /Users/jotaefe/.npm/f7f7ccce-generator-angular-next-0-1-0.lock
+30 silly lockFile f7f7ccce-generator-angular-next-0-1-0 generator-angular-next@0.1.0
+31 silly lockFile f7f7ccce-generator-angular-next-0-1-0 generator-angular-next@0.1.0
+32 silly lockFile e7094982-generator-angular-next generator-angular-next@
+33 silly lockFile e7094982-generator-angular-next generator-angular-next@
+34 silly resolved [ { name: 'generator-angular-next',
+34 silly resolved     version: '0.1.0',
+34 silly resolved     description: 'Yeoman generator',
+34 silly resolved     license: 'MIT',
+34 silly resolved     main: 'app/index.js',
+34 silly resolved     repository:
+34 silly resolved      { type: 'git',
+34 silly resolved        url: 'git://github.com/cironunes/generator-angular-next' },
+34 silly resolved     author:
+34 silly resolved      { name: 'Ciro Nunes',
+34 silly resolved        email: 'ciroanunes@gmail.com',
+34 silly resolved        url: 'https://github.com/cironunes' },
+34 silly resolved     engines: { node: '>=0.10.0' },
+34 silly resolved     scripts: { test: 'mocha' },
+34 silly resolved     files: [ 'app' ],
+34 silly resolved     keywords: [ 'yeoman-generator' ],
+34 silly resolved     dependencies:
+34 silly resolved      { 'yeoman-generator': '~0.16.0',
+34 silly resolved        chalk: '~0.4.0',
+34 silly resolved        yosay: '^0.1.0' },
+34 silly resolved     devDependencies: { 'gulp-open': '^0.2.8', mocha: '*' },
+34 silly resolved     peerDependencies: { yo: '>=1.0.0' },
+34 silly resolved     readme: '# Yeoman Generator for the AngularJS Next Generation\n\n![Angular Yeoman](angular-yeoman.png)\n\nThis generator is simple enough to create small reusable components (directives) and powerful enough to complete AngularJS applications.\n\n## Install\n```\n$ npm install -g generator-angular-next\n```\n\n## Getting started\n\n1. Scaffold the project:\n```\n$ yo angular-next\n```\n1. Then start the application:\n```\n$ gulp serve\n```\n1. Open your browser and access it at [http://localhost:8080/](http://localhost:8080/\n\n## Tasks\n```serve``` Starts the web server\n\n```\n$ gulp serve\n```\n\n---\n\n\n```tdd``` Starts Karma to watch your files and run the unit tests automatically\n\n```\n$ gulp tdd\n```\n\n## Subgenerators (coming soon)\n```\n$ yo angular-next:module [name]\n$ yo angular-next:directive [name]\n$ yo angular-next:factory [name]\n$ yo angular-next:controller [name]\n$ yo angular-next:view [name]\n```\n\n## Stack\n- AngularJS\n- Yeoman\n- NodeJS\n- Karma\n- Jasmine\n- Protractor\n- Gulp\n\n## Featues\n- [x] Unit tests with Karma and Jasmine\n- [x] E2E tests with Protractor\n- [x] E2E tests with Protractor\n- [ ] Authentication with OAuth or OpenID\n- [ ] Authentication with OAuth or OpenID\n- [ ] Generate Directives, Services, Controllers or Filters with the correspondent test files via Subgenerators\n- [ ] Code coverage with Istanbul\n\n## Motivation\nThe motivation behind this generator was the wish to DRY the proccess of configuring the necessary development environment for crafting small and modular components to be distributed on Bower or even entire applications.\n\n## Team\n[![Ciro Nunes](https://2.gravatar.com/avatar/ac4189b770a4dbc0078935a68fff6f5c)](https://github.com/cironunes) | \n--- |\n[Ciro Nunes](https://github.com/cironunes) |\n\n## License\n\nMIT © Ciro Nunes\n',
+34 silly resolved     readmeFilename: 'README.md',
+34 silly resolved     bugs: { url: 'https://github.com/cironunes/generator-angular-next/issues' },
+34 silly resolved     homepage: 'https://github.com/cironunes/generator-angular-next',
+34 silly resolved     _id: 'generator-angular-next@0.1.0',
+34 silly resolved     _from: 'generator-angular-next@' } ]
+35 info install generator-angular-next@0.1.0 into /usr/local/lib
+36 info installOne generator-angular-next@0.1.0
+37 info /usr/local/lib/node_modules/generator-angular-next unbuild
+38 info preuninstall generator-angular-next@0.1.0
+39 info uninstall generator-angular-next@0.1.0
+40 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild generator-angular-next@0.1.0
+41 info postuninstall generator-angular-next@0.1.0
+42 info /usr/local/lib/node_modules/generator-angular-next unbuild
+43 info preuninstall generator-angular-next@0.1.0
+44 info uninstall generator-angular-next@0.1.0
+45 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild generator-angular-next@0.1.0
+46 info postuninstall generator-angular-next@0.1.0
+47 error error rolling back Error: EACCES, unlink '/usr/local/lib/node_modules/generator-angular-next'
+47 error error rolling back  generator-angular-next@0.1.0 { [Error: EACCES, unlink '/usr/local/lib/node_modules/generator-angular-next']
+47 error error rolling back   errno: 3,
+47 error error rolling back   code: 'EACCES',
+47 error error rolling back   path: '/usr/local/lib/node_modules/generator-angular-next' }
+48 error Error: EACCES, unlink '/usr/local/lib/node_modules/generator-angular-next'
+48 error  { [Error: EACCES, unlink '/usr/local/lib/node_modules/generator-angular-next']
+48 error   errno: 3,
+48 error   code: 'EACCES',
+48 error   path: '/usr/local/lib/node_modules/generator-angular-next' }
+49 error Please try running this command again as root/Administrator.
+50 error System Darwin 13.1.0
+51 error command "node" "/usr/local/bin/npm" "install" "-g" "generator-angular-next"
+52 error cwd /Users/jotaefe/Documents/Projetos/Estudos/AngularJS/zenangular/shopping-juggernault
+53 error node -v v0.10.26
+54 error npm -v 1.4.3
+55 error path /usr/local/lib/node_modules/generator-angular-next
+56 error code EACCES
+57 error errno 3
+58 error stack Error: EACCES, unlink '/usr/local/lib/node_modules/generator-angular-next'
+59 verbose exit [ 3, true ]
